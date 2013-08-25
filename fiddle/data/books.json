@@ -1,0 +1,1091 @@
+[
+   {
+      "Title": "MySQL (5th Edition) (Developer's Library)",
+      "Authors": [
+         "Paul DuBois"
+      ],
+      "Released": "Apr 12, 2013",
+      "Image": "mysql0.jpg",
+      "Tags": [
+         "mysql"
+      ]
+   },
+   {
+      "Title": "Murach's MySQL",
+      "Authors": [
+         "Joel Murach"
+      ],
+      "Released": "May 1, 2012",
+      "Image": "mysql1.jpg",
+      "Tags": [
+         "mysql"
+      ]
+   },
+   {
+      "Title": "High Performance MySQL: Optimization, Backups, and Replication",
+      "Authors": [
+         "Baron Schwartz, Peter Zaitsev",
+         "Vadim Tkachenko"
+      ],
+      "Released": "Mar 30, 2012",
+      "Image": "mysql2.jpg",
+      "Tags": [
+         "mysql"
+      ]
+   },
+   {
+      "Title": "MySQL Crash Course",
+      "Authors": [
+         "Ben Forta"
+      ],
+      "Released": "Dec 22, 2005",
+      "Image": "mysql3.jpg",
+      "Tags": [
+         "mysql"
+      ]
+   },
+   {
+      "Title": "MySQL (4th Edition)",
+      "Authors": [
+         "Paul DuBois"
+      ],
+      "Released": "Sep 8, 2008",
+      "Image": "mysql4.jpg",
+      "Tags": [
+         "mysql"
+      ]
+   },
+   {
+      "Title": "Learning MySQL",
+      "Authors": [
+         "Seyed M.M. (Saied) Tahaghoghi",
+         "Hugh Williams"
+      ],
+      "Released": "Nov 21, 2006",
+      "Image": "mysql5.jpg",
+      "Tags": [
+         "mysql"
+      ]
+   },
+   {
+      "Title": "Learning PHP, MySQL, JavaScript, and CSS: A Step-by-Step Guide to Creating Dynamic Websites",
+      "Authors": [
+         "Robin Nixon"
+      ],
+      "Released": "Sep 3, 2012",
+      "Image": "mysql6.jpg",
+      "Tags": [
+         "mysql"
+      ]
+   },
+   {
+      "Title": "MySQL Cookbook",
+      "Authors": [
+         "Paul DuBois"
+      ],
+      "Released": "Jan 27, 2007",
+      "Image": "mysql7.jpg",
+      "Tags": [
+         "mysql"
+      ]
+   },
+   {
+      "Title": "Murach's PHP and MySQL (Murach: Training & Reference)",
+      "Authors": [
+         "Joel Murach",
+         "Ray Harris"
+      ],
+      "Released": "Nov 23, 2010",
+      "Image": "mysql8.jpg",
+      "Tags": [
+         "mysql"
+      ]
+   },
+   {
+      "Title": "MySQL Administrator's Bible (Bible (Wiley))",
+      "Authors": [
+         "Sheeri K. Cabral",
+         "Keith Murphy"
+      ],
+      "Released": "May 11, 2009",
+      "Image": "mysql9.jpg",
+      "Tags": [
+         "mysql"
+      ]
+   },
+   {
+      "Title": "MYSQL in a Nutshell (In a Nutshell (O'Reilly))",
+      "Authors": [
+         "Russell J.T. Dyer"
+      ],
+      "Released": "Apr 22, 2008",
+      "Image": "mysql10.jpg",
+      "Tags": [
+         "mysql"
+      ]
+   },
+   {
+      "Title": "PHP and MySQL Web Development (4th Edition)",
+      "Authors": [
+         "Luke Welling",
+         "Laura Thomson"
+      ],
+      "Released": "Oct 11, 2008",
+      "Image": "mysql11.jpg",
+      "Tags": [
+         "mysql"
+      ]
+   },
+   {
+      "Title": "MySQL Workbench: Data Modeling & Development (Oracle Press)",
+      "Authors": [
+         "Michael McLaughlin"
+      ],
+      "Released": "Apr 9, 2013",
+      "Image": "mysql12.jpg",
+      "Tags": [
+         "mysql"
+      ]
+   },
+   {
+      "Title": "The Joy of PHP: A Beginner's Guide to Programming Interactive Web Applications with PHP and mySQL",
+      "Authors": [
+         "Alan Forbes"
+      ],
+      "Released": "Jan 15, 2013",
+      "Image": "mysql13.jpg",
+      "Tags": [
+         "mysql"
+      ]
+   },
+   {
+      "Title": "MySQL High Availability: Tools for Building Robust Data Centers",
+      "Authors": [
+         "Charles Bell, Mats Kindahl",
+         "Lars Thalmann"
+      ],
+      "Released": "Jul 23, 2010",
+      "Image": "mysql14.jpg",
+      "Tags": [
+         "mysql"
+      ]
+   },
+   {
+      "Title": "MySQL 5.0 Certification Study Guide",
+      "Authors": [
+         "Paul DuBois, Stefan Hinz",
+         "Carsten Pedersen"
+      ],
+      "Released": "Sep 3, 2005",
+      "Image": "mysql15.jpg",
+      "Tags": [
+         "mysql"
+      ]
+   },
+   {
+      "Title": "MongoDB: The Definitive Guide",
+      "Authors": [
+         "Kristina Chodorow"
+      ],
+      "Released": "May 23, 2013",
+      "Image": "mongodb0.jpg",
+      "Tags": [
+         "mongodb"
+      ]
+   },
+   {
+      "Title": "MongoDB Applied Design Patterns",
+      "Authors": [
+         "Rick Copeland"
+      ],
+      "Released": "Mar 19, 2013",
+      "Image": "mongodb1.jpg",
+      "Tags": [
+         "mongodb"
+      ]
+   },
+   {
+      "Title": "MongoDB in Action",
+      "Authors": [
+         "Kyle Banker"
+      ],
+      "Released": "Dec 16, 2011",
+      "Image": "mongodb2.jpg",
+      "Tags": [
+         "mongodb"
+      ]
+   },
+   {
+      "Title": "MongoDB: The Definitive Guide",
+      "Authors": [
+         "Kristina Chodorow",
+         "Michael Dirolf"
+      ],
+      "Released": "Sep 24, 2010",
+      "Image": "mongodb3.jpg",
+      "Tags": [
+         "mongodb"
+      ]
+   },
+   {
+      "Title": "MongoDB Aggregation Framework Principles and Examples",
+      "Authors": [
+         "John Lynn"
+      ],
+      "Released": "Jun 17, 2013",
+      "Image": "mongodb4.jpg",
+      "Tags": [
+         "mongodb"
+      ]
+   },
+   {
+      "Title": "Building Node Applications with MongoDB and Backbone",
+      "Authors": [
+         "Mike Wilson"
+      ],
+      "Released": "Dec 31, 2012",
+      "Image": "mongodb5.jpg",
+      "Tags": [
+         "mongodb"
+      ]
+   },
+   {
+      "Title": "The Definitive Guide to MongoDB: The NoSQL Database for Cloud and Desktop Computing",
+      "Authors": [
+         "Eelco Plugge, Tim Hawkins",
+         "Peter Membrey"
+      ],
+      "Released": "Oct 26, 2010",
+      "Image": "mongodb6.jpg",
+      "Tags": [
+         "mongodb"
+      ]
+   },
+   {
+      "Title": "Scaling MongoDB",
+      "Authors": [
+         "Kristina Chodorow"
+      ],
+      "Released": "Mar 7, 2011",
+      "Image": "mongodb7.jpg",
+      "Tags": [
+         "mongodb"
+      ]
+   },
+   {
+      "Title": "MongoDB with Python and Ming",
+      "Authors": [
+         "Rick Copeland"
+      ],
+      "Released": "Jul 22, 2012",
+      "Image": "mongodb8.jpg",
+      "Tags": [
+         "mongodb"
+      ]
+   },
+   {
+      "Title": "50 Tips and Tricks for MongoDB Developers",
+      "Authors": [
+         "Kristina Chodorow"
+      ],
+      "Released": "May 6, 2011",
+      "Image": "mongodb9.jpg",
+      "Tags": [
+         "mongodb"
+      ]
+   },
+   {
+      "Title": "MongoDB and Python: Patterns and processes for the popular document-oriented database",
+      "Authors": [
+         "Niall O'Higgins"
+      ],
+      "Released": "Sep 30, 2011",
+      "Image": "mongodb10.jpg",
+      "Tags": [
+         "mongodb"
+      ]
+   },
+   {
+      "Title": "Pro Hibernate and MongoDB",
+      "Authors": [
+         "Anghel Leonard"
+      ],
+      "Released": "Jun 26, 2013",
+      "Image": "mongodb11.jpg",
+      "Tags": [
+         "mongodb"
+      ]
+   },
+   {
+      "Title": "What Is Node?",
+      "Authors": [
+         "Brett McLaughlin"
+      ],
+      "Released": "Jul 13, 2011",
+      "Image": "mongodb12.jpg",
+      "Tags": [
+         "mongodb"
+      ]
+   },
+   {
+      "Title": "MongoDB for C#",
+      "Authors": [
+         ""
+      ],
+      "Released": "xampl",
+      "Image": "mongodb13.jpg",
+      "Tags": [
+         "mongodb"
+      ]
+   },
+   {
+      "Title": "MongoDB and PHP",
+      "Authors": [
+         "Steve Francia"
+      ],
+      "Released": "Feb 3, 2012",
+      "Image": "mongodb14.jpg",
+      "Tags": [
+         "mongodb"
+      ]
+   },
+   {
+      "Title": "Seven Databases in Seven Weeks: A Guide to Modern Databases and the NoSQL Movement",
+      "Authors": [
+         "Eric Redmond",
+         "Jim R. Wilson"
+      ],
+      "Released": "May 18, 2012",
+      "Image": "mongodb15.jpg",
+      "Tags": [
+         "mongodb"
+      ]
+   },
+   {
+      "Title": "What Is Node?",
+      "Authors": [
+         "Brett McLaughlin"
+      ],
+      "Released": "Jul 13, 2011",
+      "Image": "nodejs0.jpg",
+      "Tags": [
+         "nodejs"
+      ]
+   },
+   {
+      "Title": "Node.js in Action",
+      "Authors": [
+         "Mike Cantelon, TJ Holowaychuk",
+         "Nathan Rajlich"
+      ],
+      "Released": "Sep 28, 2013",
+      "Image": "nodejs1.jpg",
+      "Tags": [
+         "nodejs"
+      ]
+   },
+   {
+      "Title": "Nodejs Programming By Example",
+      "Authors": [
+         "Agus Kurniawan"
+      ],
+      "Released": "Aug 2, 2012",
+      "Image": "nodejs2.jpg",
+      "Tags": [
+         "nodejs"
+      ]
+   },
+   {
+      "Title": "Professional Node.js: Building Javascript Based Scalable Software",
+      "Authors": [
+         "Pedro Teixeira"
+      ],
+      "Released": "Oct 23, 2012",
+      "Image": "nodejs3.jpg",
+      "Tags": [
+         "nodejs"
+      ]
+   },
+   {
+      "Title": "Node: Up and Running: Scalable Server-Side Code with JavaScript",
+      "Authors": [
+         "Tom Hughes-Croucher",
+         "Mike Wilson"
+      ],
+      "Released": "May 7, 2012",
+      "Image": "nodejs4.jpg",
+      "Tags": [
+         "nodejs"
+      ]
+   },
+   {
+      "Title": "Smashing Node.js: JavaScript Everywhere (Smashing Magazine Book Series)",
+      "Authors": [
+         "Guillermo Rauch"
+      ],
+      "Released": "Sep 4, 2012",
+      "Image": "nodejs5.jpg",
+      "Tags": [
+         "nodejs"
+      ]
+   },
+   {
+      "Title": "Learning Node.js: A Hands-On Guide to Building Web Applications in JavaScript",
+      "Authors": [
+         "Marc Wandschneider"
+      ],
+      "Released": "Jun 29, 2013",
+      "Image": "nodejs6.jpg",
+      "Tags": [
+         "nodejs"
+      ]
+   },
+   {
+      "Title": "Sams Teach Yourself Node.js in 24 Hours",
+      "Authors": [
+         "George Ornbo"
+      ],
+      "Released": "Sep 15, 2012",
+      "Image": "nodejs7.jpg",
+      "Tags": [
+         "nodejs"
+      ]
+   },
+   {
+      "Title": "Secrets of the JavaScript Ninja",
+      "Authors": [
+         "John Resig",
+         "Bear Bibeault"
+      ],
+      "Released": "Dec 28, 2012",
+      "Image": "nodejs8.jpg",
+      "Tags": [
+         "nodejs"
+      ]
+   },
+   {
+      "Title": "AngularJS",
+      "Authors": [
+         "Brad Green",
+         "Shyam Seshadri"
+      ],
+      "Released": "Apr 30, 2013",
+      "Image": "nodejs9.jpg",
+      "Tags": [
+         "nodejs"
+      ]
+   },
+   {
+      "Title": "Building Node Applications with MongoDB and Backbone",
+      "Authors": [
+         "Mike Wilson"
+      ],
+      "Released": "Dec 31, 2012",
+      "Image": "nodejs10.jpg",
+      "Tags": [
+         "nodejs"
+      ]
+   },
+   {
+      "Title": "Learning Node",
+      "Authors": [
+         "Shelley Powers"
+      ],
+      "Released": "Oct 10, 2012",
+      "Image": "nodejs11.jpg",
+      "Tags": [
+         "nodejs"
+      ]
+   },
+   {
+      "Title": "JavaScript: The Good Parts",
+      "Authors": [
+         "Douglas Crockford"
+      ],
+      "Released": "May 2008",
+      "Image": "nodejs12.jpg",
+      "Tags": [
+         "nodejs"
+      ]
+   },
+   {
+      "Title": "JavaScript Patterns",
+      "Authors": [
+         "Stoyan Stefanov"
+      ],
+      "Released": "Sep 28, 2010",
+      "Image": "nodejs13.jpg",
+      "Tags": [
+         "nodejs"
+      ]
+   },
+   {
+      "Title": "Node Web Development",
+      "Authors": [
+         "David Herron"
+      ],
+      "Released": "Aug 10, 2011",
+      "Image": "nodejs14.jpg",
+      "Tags": [
+         "nodejs"
+      ]
+   },
+   {
+      "Title": "JavaScript: The Definitive Guide: Activate Your Web Pages (Definitive Guides)",
+      "Authors": [
+         "David Flanagan"
+      ],
+      "Released": "May 10, 2011",
+      "Image": "nodejs15.jpg",
+      "Tags": [
+         "nodejs"
+      ]
+   },
+   {
+      "Title": "jQuery Compressed",
+      "Authors": [
+         "Jakob Jenkov"
+      ],
+      "Released": "May 5, 2013",
+      "Image": "jquery0.jpg",
+      "Tags": [
+         "jquery"
+      ]
+   },
+   {
+      "Title": "JavaScript & jQuery: The Missing Manual",
+      "Authors": [
+         "David Sawyer McFarland"
+      ],
+      "Released": "Oct 28, 2011",
+      "Image": "jquery1.jpg",
+      "Tags": [
+         "jquery"
+      ]
+   },
+   {
+      "Title": "Murach's JavaScript and jQuery",
+      "Authors": [
+         "Zak Ruvalcaba",
+         "Mike Murach"
+      ],
+      "Released": "Dec 11, 2012",
+      "Image": "jquery2.jpg",
+      "Tags": [
+         "jquery"
+      ]
+   },
+   {
+      "Title": "jQuery: Just the Basics - A Primer for the JavaScript Programmer",
+      "Authors": [
+         "Michael J Young"
+      ],
+      "Released": "Nov 8, 2012",
+      "Image": "jquery3.jpg",
+      "Tags": [
+         "jquery"
+      ]
+   },
+   {
+      "Title": "Learning jQuery, Third Edition",
+      "Authors": [
+         "Jonathan Chaffer",
+         "Karl Swedberg"
+      ],
+      "Released": "Sep 23, 2011",
+      "Image": "jquery4.jpg",
+      "Tags": [
+         "jquery"
+      ]
+   },
+   {
+      "Title": "jQuery, jQuery UI, and jQuery Mobile: Recipes and Examples (Developer's Library)",
+      "Authors": [
+         "Adriaan de Jonge",
+         "Phillip Dutson"
+      ],
+      "Released": "Nov 12, 2012",
+      "Image": "jquery5.jpg",
+      "Tags": [
+         "jquery"
+      ]
+   },
+   {
+      "Title": "jQuery Pocket Reference",
+      "Authors": [
+         "David Flanagan"
+      ],
+      "Released": "Jan 4, 2011",
+      "Image": "jquery6.jpg",
+      "Tags": [
+         "jquery"
+      ]
+   },
+   {
+      "Title": "Pro jQuery",
+      "Authors": [
+         "Adam Freeman"
+      ],
+      "Released": "Feb 24, 2012",
+      "Image": "jquery7.jpg",
+      "Tags": [
+         "jquery"
+      ]
+   },
+   {
+      "Title": "jQuery Cookbook: Solutions & Examples for jQuery Developers (Animal Guide)",
+      "Authors": [
+         "Cody Lindley"
+      ],
+      "Released": "Dec 3, 2009",
+      "Image": "jquery8.jpg",
+      "Tags": [
+         "jquery"
+      ]
+   },
+   {
+      "Title": "jQuery: Novice to Ninja",
+      "Authors": [
+         "Earle Castledine",
+         "Craig Sharkie"
+      ],
+      "Released": "Feb 23, 2012",
+      "Image": "jquery9.jpg",
+      "Tags": [
+         "jquery"
+      ]
+   },
+   {
+      "Title": "jQuery in Action, Second Edition",
+      "Authors": [
+         "Bear Bibeault",
+         "Yehuda Katz"
+      ],
+      "Released": "Jul 5, 2010",
+      "Image": "jquery10.jpg",
+      "Tags": [
+         "jquery"
+      ]
+   },
+   {
+      "Title": "JavaScript & JQuery: Interactive Front-End Web Development",
+      "Authors": [
+         "Jon Duckett"
+      ],
+      "Released": "Oct 28, 2013",
+      "Image": "jquery11.jpg",
+      "Tags": [
+         "jquery"
+      ]
+   },
+   {
+      "Title": "jQuery Hotshot",
+      "Authors": [
+         "Dan Wellman"
+      ],
+      "Released": "Mar 26, 2013",
+      "Image": "jquery12.jpg",
+      "Tags": [
+         "jquery"
+      ]
+   },
+   {
+      "Title": "Head First jQuery",
+      "Authors": [
+         "Ryan Benedetti",
+         "Ronan Cranley"
+      ],
+      "Released": "Sep 29, 2011",
+      "Image": "jquery13.jpg",
+      "Tags": [
+         "jquery"
+      ]
+   },
+   {
+      "Title": "JavaScript and HTML5 Now",
+      "Authors": [
+         "Kyle Simpson"
+      ],
+      "Released": "Jun 30, 2012",
+      "Image": "jquery14.jpg",
+      "Tags": [
+         "jquery"
+      ]
+   },
+   {
+      "Title": "jQuery Mobile: Up and Running",
+      "Authors": [
+         "Maximiliano Firtman"
+      ],
+      "Released": "Feb 28, 2012",
+      "Image": "jquery15.jpg",
+      "Tags": [
+         "jquery"
+      ]
+   },
+   {
+      "Title": "AngularJS",
+      "Authors": [
+         "Brad Green",
+         "Shyam Seshadri"
+      ],
+      "Released": "Apr 30, 2013",
+      "Image": "angularjs0.jpg",
+      "Tags": [
+         "angularjs"
+      ]
+   },
+   {
+      "Title": "Developing an AngularJS Edge",
+      "Authors": [
+         "Christopher Hiller",
+         "Troy Mott"
+      ],
+      "Released": "Apr 26, 2013",
+      "Image": "angularjs1.jpg",
+      "Tags": [
+         "angularjs"
+      ]
+   },
+   {
+      "Title": "AngularJS in Action",
+      "Authors": [
+         "Brian Ford",
+         "Lukas Ruebbelke"
+      ],
+      "Released": "Jan 28, 2014",
+      "Image": "angularjs2.jpg",
+      "Tags": [
+         "angularjs"
+      ]
+   },
+   {
+      "Title": "Instant AngularJS Starter",
+      "Authors": [
+         "Dan Menard"
+      ],
+      "Released": "Feb 20, 2013",
+      "Image": "angularjs3.jpg",
+      "Tags": [
+         "angularjs"
+      ]
+   },
+   {
+      "Title": "Recipes with Angular.js",
+      "Authors": [
+         "Frederik Dietz"
+      ],
+      "Released": "Jun 30, 2013",
+      "Image": "angularjs4.jpg",
+      "Tags": [
+         "angularjs"
+      ]
+   },
+   {
+      "Title": "Mastering Web Application Development with AngularJS",
+      "Authors": [
+         "Pawel Kozlowski",
+         "Peter Bacon Darwin"
+      ],
+      "Released": "Aug 23, 2013",
+      "Image": "angularjs5.jpg",
+      "Tags": [
+         "angularjs"
+      ]
+   },
+   {
+      "Title": "Secrets of the JavaScript Ninja",
+      "Authors": [
+         "John Resig",
+         "Bear Bibeault"
+      ],
+      "Released": "Dec 28, 2012",
+      "Image": "angularjs6.jpg",
+      "Tags": [
+         "angularjs"
+      ]
+   },
+   {
+      "Title": "Bootstrap",
+      "Authors": [
+         "Jake Spurlock"
+      ],
+      "Released": "May 22, 2013",
+      "Image": "angularjs7.jpg",
+      "Tags": [
+         "angularjs"
+      ]
+   },
+   {
+      "Title": "What Is Node?",
+      "Authors": [
+         "Brett McLaughlin"
+      ],
+      "Released": "Jul 13, 2011",
+      "Image": "angularjs8.jpg",
+      "Tags": [
+         "angularjs"
+      ]
+   },
+   {
+      "Title": "Single Page Web Applications: JavaScript end-to-end",
+      "Authors": [
+         "Michael Mikowski",
+         "Josh Powell"
+      ],
+      "Released": "Sep 28, 2013",
+      "Image": "angularjs9.jpg",
+      "Tags": [
+         "angularjs"
+      ]
+   },
+   {
+      "Title": "Functional JavaScript: Introducing Functional Programming with Underscore.js",
+      "Authors": [
+         "Michael Fogus"
+      ],
+      "Released": "Jun 17, 2013",
+      "Image": "angularjs10.jpg",
+      "Tags": [
+         "angularjs"
+      ]
+   },
+   {
+      "Title": "Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript (Effective Software Development Series...",
+      "Authors": [
+         "David Herman"
+      ],
+      "Released": "Dec 6, 2012",
+      "Image": "angularjs11.jpg",
+      "Tags": [
+         "angularjs"
+      ]
+   },
+   {
+      "Title": "JavaScript: The Good Parts",
+      "Authors": [
+         "Douglas Crockford"
+      ],
+      "Released": "May 2008",
+      "Image": "angularjs12.jpg",
+      "Tags": [
+         "angularjs"
+      ]
+   },
+   {
+      "Title": "Developing Backbone.js Applications",
+      "Authors": [
+         "Addy Osmani"
+      ],
+      "Released": "May 29, 2013",
+      "Image": "angularjs13.jpg",
+      "Tags": [
+         "angularjs"
+      ]
+   },
+   {
+      "Title": "JavaScript Patterns",
+      "Authors": [
+         "Stoyan Stefanov"
+      ],
+      "Released": "Sep 28, 2010",
+      "Image": "angularjs14.jpg",
+      "Tags": [
+         "angularjs"
+      ]
+   },
+   {
+      "Title": "Implementing Responsive Design: Building sites for an anywhere, everywhere web (Voices That Matter)",
+      "Authors": [
+         "Tim Kadlec",
+         "Aaron Gustafson"
+      ],
+      "Released": "Aug 10, 2012",
+      "Image": "angularjs15.jpg",
+      "Tags": [
+         "angularjs"
+      ]
+   },
+   {
+      "Title": "Learning PHP, MySQL, JavaScript, and CSS: A Step-by-Step Guide to Creating Dynamic Websites",
+      "Authors": [
+         "Robin Nixon"
+      ],
+      "Released": "Sep 3, 2012",
+      "Image": "php0.jpg",
+      "Tags": [
+         "php"
+      ]
+   },
+   {
+      "Title": "Programming PHP",
+      "Authors": [
+         "Kevin Tatroe, Peter MacIntyre",
+         "Rasmus Lerdorf"
+      ],
+      "Released": "Feb 22, 2013",
+      "Image": "php1.jpg",
+      "Tags": [
+         "php"
+      ]
+   },
+   {
+      "Title": "PHP and MySQL Web Development (4th Edition)",
+      "Authors": [
+         "Luke Welling",
+         "Laura Thomson"
+      ],
+      "Released": "Oct 11, 2008",
+      "Image": "php2.jpg",
+      "Tags": [
+         "php"
+      ]
+   },
+   {
+      "Title": "The Joy of PHP: A Beginner's Guide to Programming Interactive Web Applications with PHP and mySQL",
+      "Authors": [
+         "Alan Forbes"
+      ],
+      "Released": "Jan 15, 2013",
+      "Image": "php3.jpg",
+      "Tags": [
+         "php"
+      ]
+   },
+   {
+      "Title": "PHP Solutions: Dynamic Web Design Made Easy",
+      "Authors": [
+         "David Powers"
+      ],
+      "Released": "Nov 24, 2010",
+      "Image": "php4.jpg",
+      "Tags": [
+         "php"
+      ]
+   },
+   {
+      "Title": "PHP for the Web: Visual QuickStart Guide (4th Edition)",
+      "Authors": [
+         "Larry Ullman"
+      ],
+      "Released": "Mar 19, 2011",
+      "Image": "php5.jpg",
+      "Tags": [
+         "php"
+      ]
+   },
+   {
+      "Title": "PHP Advanced and Object-Oriented Programming: Visual QuickPro Guide (3rd Edition)",
+      "Authors": [
+         "Larry Ullman"
+      ],
+      "Released": "Sep 23, 2012",
+      "Image": "php6.jpg",
+      "Tags": [
+         "php"
+      ]
+   },
+   {
+      "Title": "PHP & MySQL: The Missing Manual",
+      "Authors": [
+         "Brett McLaughlin"
+      ],
+      "Released": "Nov 27, 2012",
+      "Image": "php7.jpg",
+      "Tags": [
+         "php"
+      ]
+   },
+   {
+      "Title": "PHP and MySQL for Dynamic Web Sites: Visual QuickPro Guide (4th Edition)",
+      "Authors": [
+         "Larry Ullman"
+      ],
+      "Released": "Sep 23, 2011",
+      "Image": "php8.jpg",
+      "Tags": [
+         "php"
+      ]
+   },
+   {
+      "Title": "PHP OOP: Quick & Dirty for Advanced Learners",
+      "Authors": [
+         "Subhash Chandran"
+      ],
+      "Released": "Apr 2, 2013",
+      "Image": "php9.jpg",
+      "Tags": [
+         "php"
+      ]
+   },
+   {
+      "Title": "Beginning PHP 5.3",
+      "Authors": [
+         "Matt Doyle"
+      ],
+      "Released": "Oct 26, 2009",
+      "Image": "php10.jpg",
+      "Tags": [
+         "php"
+      ]
+   },
+   {
+      "Title": "PHP and MySQL Web Development (5th Edition)",
+      "Authors": [
+         "Luke Welling",
+         "Laura Thomson"
+      ],
+      "Released": "Dec 12, 2013",
+      "Image": "php11.jpg",
+      "Tags": [
+         "php"
+      ]
+   },
+   {
+      "Title": "Murach's PHP and MySQL (Murach: Training & Reference)",
+      "Authors": [
+         "Joel Murach",
+         "Ray Harris"
+      ],
+      "Released": "Nov 23, 2010",
+      "Image": "php12.jpg",
+      "Tags": [
+         "php"
+      ]
+   },
+   {
+      "Title": "PHP Cookbook: Solutions and Examples for PHP Programmers",
+      "Authors": [
+         "Adam Trachtenberg",
+         "David Sklar"
+      ],
+      "Released": "Aug 1, 2006",
+      "Image": "php13.jpg",
+      "Tags": [
+         "php"
+      ]
+   },
+   {
+      "Title": "PHP Objects, Patterns and Practice (Expert's Voice in Open Source)",
+      "Authors": [
+         "Matt Zandstra"
+      ],
+      "Released": "Jun 7, 2010",
+      "Image": "php14.jpg",
+      "Tags": [
+         "php"
+      ]
+   },
+   {
+      "Title": "PHP, MySQL, JavaScript & HTML5 All-in-One For Dummies (For Dummies (Computer/Tech))",
+      "Authors": [
+         "Steve Suehring",
+         "Janet Valade"
+      ],
+      "Released": "Apr 1, 2013",
+      "Image": "php15.jpg",
+      "Tags": [
+         "php"
+      ]
+   }
+]
