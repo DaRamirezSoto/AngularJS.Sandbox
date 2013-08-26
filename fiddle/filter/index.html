@@ -17,9 +17,9 @@
         //-->
     </head>
     <body data-ng-controller="listCtrl">
-        <div class="nav-bar navbar-fixed-top" style="background: #EEE;padding-bottom: 12px">
+        <div class="nav-bar navbar-fixed-top" style="background: #EEE;">
             <div class="container">
-                <h1>Find books<small>- Filter with AngularJS</small></h1>
+                <h1>Find books <small>- Filter with AngularJS</small></h1>
                 <form class="form-inline" role="form">
                     <div class="form-group">
                         <label class="sr-only">Category</label>
@@ -31,15 +31,20 @@
                         <label class="sr-only" for="query">Search</label>
                         <input type="text" class="form-control" id="query" style="width:600px;" data-ng-model="query" placeholder="Search for books with &hellip; ">
                     </div>
-                    <div class="form-group">
-                        <p class="form-control-static">found {{ filtered.length }} in {{ books.length }} books</p>
+
+                    <div >
+                        <span>Found {{ filtered.length }} matches in {{ books.length }} books</span>
+                        <ul class="list-inline" style="display: inline-block; margin-left: 210px;">
+                            <li data-ng-init="predicate='Released'" >Order by :</li>
+                            <li data-ng-repeat="property in properties"><a href="" data-ng-click="$parent.predicate=property">{{ property }}</a></li>
+                        </ul>
                     </div>
                 </form>
             </div>
         </div>
-        <div style="margin-top: 128px;">
+        <div style="margin-top: 150px;">
             <ul class="listl-unstyled list-inline">
-                <li data-ng-repeat="book in filtered = ({true:books,false:(books|filter:search)}[search.Tags==null]|filter:query)" style="width: 50%;height: 250px;">
+                <li data-ng-repeat="book in filtered = ({true:books,false:(books|filter:search)}[search.Tags==null]|filter:query|orderBy:predicate)" style="width: 50%;height: 250px;">
                     <img src="../data/assets/{{ book.Image }}" class="pull-left">
                     <b>{{ book.Title }}</b><br>
                     <i>Released : </i>{{ book.Released }}<br>

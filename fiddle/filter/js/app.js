@@ -14,6 +14,12 @@ function listCtrl($scope,$http) {
                             .value();
                 })();
 
+                $scope.properties = (function(){
+                    return _.chain($scope.books[0])
+                            .keys()
+                            .value();
+                }());
+
             });
 
 
