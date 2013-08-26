@@ -3,9 +3,9 @@ AngularJS - Sandbox
 
 Fiddles
 -------------------
-- [simple-navigation]
-- [dynamic-filter]
+- [navigation]
+- [filter]
 
 
-[simple-navigation]:http://daramirezsoto.github.io/angularjs-sandbox/fiddle/simple-navigation
-[dynamic-filter]:http://daramirezsoto.github.io/angularjs-sandbox/fiddle/dynamic-filter
+[navigation]:http://daramirezsoto.github.io/angularjs-sandbox/fiddle/navigation
+[filter]:http://daramirezsoto.github.io/angularjs-sandbox/fiddle/filter
