@@ -1,7 +1,11 @@
-AngularJS.Sandbox
-=================
+AngularJS - Sandbox
+===================
 
-AngularJS Fiddles
+Fiddles
+-------------------
+- [simple-navigation]
+- [dynamic-filter]
 
-- Simple Navigation
-- Dynamic Filter
+
+[simple-navigation]:http://daramirezsoto.github.io/angularjs-sandbox/fiddle/simple-navigation
+[dynamic-filter]:http://daramirezsoto.github.io/angularjs-sandbox/fiddle/dynamic-filter
