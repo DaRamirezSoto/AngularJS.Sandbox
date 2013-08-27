@@ -15,6 +15,14 @@
         <link rel="stylesheet" href="css/site.css">
         <script src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         //-->
+        <style>
+            .sortasc:before {
+                content: '\25B2';
+            }
+            .sortdesc:before {
+                content: '\25BC';
+            }
+        </style>
     </head>
     <body data-ng-controller="listCtrl">
         <div class="nav-bar navbar-fixed-top" style="background: #EEE;">
@@ -35,8 +43,11 @@
                     <div >
                         <span>Found {{ filtered.length }} matches in {{ books.length }} books</span>
                         <ul class="list-inline" style="display: inline-block; margin-left: 210px;">
-                            <li data-ng-init="predicate='Released'" >Order by :</li>
-                            <li data-ng-repeat="property in properties"><a href="" data-ng-click="$parent.predicate=property">{{ property }}</a></li>
+                            <li data-ng-init="predicate='Title';reverse=false" >Order by :</li>
+                            <li data-ng-repeat="property in properties">
+                                <a href=""
+                                   data-ng-class="{sortasc:($parent.predicate==property && !$parent.reverse),sortdesc:($parent.predicate==property && $parent.reverse)}"
+                                   data-ng-click="{true:($parent.reverse=!$parent.reverse),false:($parent.predicate=property)}[$parent.predicate==property]">{{ property }}</a></li>
                         </ul>
                     </div>
                 </form>
@@ -44,7 +55,7 @@
         </div>
         <div style="margin-top: 150px;">
             <ul class="listl-unstyled list-inline">
-                <li data-ng-repeat="book in filtered = ({true:books,false:(books|filter:search)}[search.Tags==null]|filter:query|orderBy:predicate)" style="width: 50%;height: 250px;">
+                <li data-ng-repeat="book in filtered = ({true:books,false:(books|filter:search)}[search.Tags==null]|filter:query|orderBy:predicate:reverse)" style="width: 50%;height: 250px;">
                     <img src="../data/assets/{{ book.Image }}" class="pull-left">
                     <b>{{ book.Title }}</b><br>
                     <i>Released : </i>{{ book.Released }}<br>
@@ -60,6 +71,15 @@
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
         <script src="../../js/vendor/underscore-min.js"></script>
         <script src="js/app.js"></script>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-43520258-1', 'daramirezsoto.github.io');
+            ga('send', 'pageview');
+        </script>
 
     </body>
 </html>
