@@ -43,14 +43,16 @@
                     <div >
                         <span>Found {{ filtered.length }} matches in {{ books.length }} books</span>
                         <ul class="list-inline" style="display: inline-block; margin-left: 210px;">
-                            <li data-ng-init="predicate='Title';reverse=false" >Order by :</li>
+                            <li>Order by :</li>
                             <li data-ng-repeat="property in properties">
                                 <a href=""
-                                   data-ng-class="{sortasc:($parent.predicate==property && !$parent.reverse),sortdesc:($parent.predicate==property && $parent.reverse)}"
-                                   data-ng-click="{true:($parent.reverse=!$parent.reverse),false:($parent.predicate=property)}[$parent.predicate==property]">{{ property }}</a></li>
+                                   data-ng-class="predicate==property?{false:'sortasc',true:'sortdesc'}[reverse]:''"
+                                   data-ng-click="setOrderBy(property)">{{ property }}</a></li>
                                    <!--
+                                   data-ng-click="$parent.predicate==property?($parent.reverse=!$parent.reverse):($parent.reverse=false)">{{ property }}</a></li>
                                    data-ng-click="$parent.predicate==property?($parent.reverse=!$parent.reverse):$parent.predicate=property">{{ property }}</a></li>
                                    //-->
+
                         </ul>
                     </div>
                 </form>
@@ -79,29 +81,36 @@
             function listCtrl($scope,$http) {
 
                 $http.get('../data/books.json')
-                        .then(function(response) {
-                            $scope.books = response.data;
-                            $scope.tags = (function () {
-                                return _.chain($scope.books)
-                                        .pluck('Tags')
-                                        .flatten()
-                                        .unique()
-                                        .sort()
-                                        .value();
-                            })();
+                    .then(function(response) {
+                        $scope.books = response.data;
+                        $scope.tags = (function () {
+                            return _.chain($scope.books)
+                                    .pluck('Tags')
+                                    .flatten()
+                                    .unique()
+                                    .sort()
+                                    .value();
+                        })();
+                        $scope.properties = (function(){
+                            return _.chain($scope.books[0])
+                                    .keys()
+                                    .value();
+                        }());
+                        $scope.predicate = $scope.properties[0];
+                        $scope.reverse = false;
 
-                            $scope.properties = (function(){
-                                return _.chain($scope.books[0])
-                                        .keys()
-                                        .value();
-                            }());
+                });
 
-                        });
-
-
-
+                $scope.setOrderBy = function(property) {
+                    if($scope.predicate === property) {
+                        $scope.reverse = !$scope.reverse;
+                    }else{
+                        $scope.predicate = property;
+                        $scope.reverse = false;
+                    }
+                };
             }
-            
+
         </script>
     </body>
 </html>
