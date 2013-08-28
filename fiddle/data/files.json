@@ -1,0 +1,35 @@
+[
+    {"type":"directory","name":"directory1","nodes" : [
+        {"type":"file","name":"file1.txt"},
+        {"type":"file","name":"file1.txt"},
+        {"type":"file","name":"file1.txt"}
+    ]},
+    {"type":"directory","name":"directory2","nodes" : [
+        {"type":"directory","name":"subdirectory1","nodes" : [
+            {"type":"file","name":"file1.txt"},
+            {"type":"file","name":"file1.txt"},
+            {"type":"file","name":"file1.txt"}
+        ]},
+        {"type":"file","name":"file1.txt"},
+        {"type":"file","name":"file1.txt"},
+        {"type":"file","name":"file1.txt"}
+    ]},
+    {"type":"directory","name":"directory3","nodes" : [
+        {"type":"directory","name":"subdirectory1","nodes" : [
+            {"type":"file","name":"file1.txt"},
+            {"type":"file","name":"file1.txt"},
+            {"type":"file","name":"file1.txt"}
+        ]},
+        {"type":"directory","name":"subdirectory2","nodes" : [
+            {"type":"file","name":"file1.txt"},
+            {"type":"file","name":"file1.txt"},
+            {"type":"file","name":"file1.txt"}
+        ]},
+        {"type":"file","name":"file1.txt"},
+        {"type":"file","name":"file1.txt"},
+        {"type":"file","name":"file1.txt"}
+    ]},
+    {"type":"file","name":"file1.txt"},
+    {"type":"file","name":"file1.txt"},
+    {"type":"file","name":"file1.txt"}
+]
