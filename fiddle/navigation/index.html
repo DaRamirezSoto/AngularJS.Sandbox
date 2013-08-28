@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" data-ng-app="navigationFiddle" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" data-ng-app="navigationFiddle" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" data-ng-app="navigationFiddle" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" data-ng-app="navigationFiddle" class="no-js"> <!--<![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9">                <![endif]-->
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7">  <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8">         <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js">                       <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -14,54 +14,81 @@
         <link rel="stylesheet" href="../../css/fiddle.css">
         <script src="../../js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
-    <body>
-        <nav class="container" role="navigation">
-            <h1>Navigation AngularJS</h1>
-            <ul class="nav nav-pills">
-                <li class="active" ><a href="#/page/1">Page 1</a></li>
-                <li><a href="#/page/2">Page 2</a></li>
-                <li><a href="#/page/3">Page 3</a></li>
-                <li><a href="#/page/4">Page 4</a></li>
-            </ul>
-        </nav>
+    <body  data-ng-app="navigationFiddle">
+        <div class="navbar-fiddle">
+            <nav class="container" role="navigation">
+                <h1>Navigation <small>- with AngularJS</small></h1>
+                <ul class="nav nav-pills" data-ng-controller="menuCtrl">
+                    <li data-ng-class="{ active : menu.active() == 'NAV_HOME'     }"><a href="#/home">Home</a></li>
+                    <li data-ng-class="{ active : menu.active() == 'NAV_SERVICE'  }"><a href="#/services">Service</a></li>
+                    <li data-ng-class="{ active : menu.active() == 'NAV_ABOUT'    }"><a href="#/about">About</a></li>
+                    <li data-ng-class="{ active : menu.active() == 'NAV_CONTACT'  }"><a href="#/contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div>&nbsp;</div>
+        </div>
         <div data-ng-view class="container" ></div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>');</script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js"></script>
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
         <script src="../../js/vendor/underscore-min.js"></script>
         <script>
 
-            angular.module('navigationFiddle', [], function($routeProvider, $locationProvider) {
+            angular.
+                module('navigationFiddle', []).
+                factory('menuService',function() {
 
-                $routeProvider.
-                  when('/page/1', { templateUrl: 'view/page1.html', controller: Page1Ctrl }).
-                  when('/page/2', { templateUrl: 'view/page2.html', controller: Page2Ctrl }).
-                  when('/page/3', { templateUrl: 'view/page3.html', controller: Page3Ctrl }).
-                  when('/page/4', { templateUrl: 'view/page4.html', controller: Page4Ctrl }).
-                  otherwise({redirectTo:'/page/1'});
+                    var current = null;
 
-                //$locationProvider.html5Mode(true);
+                    return {
 
-             });
+                        active : function(active) {
 
-            function Page1Ctrl($scope) {
-              console.log("page-1");
-            }
+                            current = active || current;
+                            return  current;
 
-            function Page2Ctrl($scope) {
-              console.log("page-2");
-            }
+                        }
+                    };
 
-            function Page3Ctrl($scope) {
-              console.log("page-3");
-            }
+                }).
+                controller('menuCtrl',['$scope','menuService',function($scope,menuService) {
 
-            function Page4Ctrl($scope) {
-              console.log("page-4");
-            }
+                    $scope.menu = menuService;
 
+                }]).
+                controller('homeCtrl',['$scope','menuService',function($scope,menuService) {
 
+                    menuService.active('NAV_HOME');
+
+                }]).
+                controller('serviceCtrl',['$scope','menuService',function($scope,menuService) {
+
+                    menuService.active('NAV_SERVICE');
+
+                }]).
+                controller('aboutCtrl',['$scope','menuService',function($scope,menuService) {
+
+                    menuService.active('NAV_ABOUT');
+
+                }]).
+                controller('contactCtrl',['$scope','menuService',function($scope,menuService) {
+
+                    menuService.active('NAV_CONTACT');
+
+                }]).
+                config(['$routeProvider',function($routeProvider) {
+
+                    $routeProvider.
+                      when('/home',     { templateUrl: 'view/home.html',     controller: 'homeCtrl'       }).
+                      when('/services', { templateUrl: 'view/services.html', controller: 'serviceCtrl'   }).
+                      when('/about',    { templateUrl: 'view/about.html',    controller: 'aboutCtrl'      }).
+                      when('/contact',  { templateUrl: 'view/contact.html',  controller: 'contactCtrl'    }).
+                      otherwise({redirectTo:'/home'});
+
+                    //$locationProvider.html5Mode(true);
+
+                }]);
         </script>
     </body>
 </html>

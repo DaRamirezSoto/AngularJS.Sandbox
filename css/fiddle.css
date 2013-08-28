@@ -5,3 +5,8 @@
     Description:
         Defined global styles used in the fiddels
 */
+
+.navbar-fiddle {
+    background: #DDD;
+    border-bottom: solid 1px;
+}
