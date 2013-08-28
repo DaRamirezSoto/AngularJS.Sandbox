@@ -1,1 +1,23 @@
 <h1>Contact</h1>
+<form role="form">
+    <div class="form-group">
+        <label class="sr-only" for="name">Name</label>
+        <span></span>
+        <input class="form-control input-lg" required="required" name="name" id="name" data-ng-model="contact.name" type="text" placeholder="Your name">
+    </div>
+    <div class="form-group">
+        <label class="sr-only" for="email">Email</label>
+        <input class="form-control input-lg" required="required" name="email" id="email" data-ng-model="contact.email" type="email" placeholder="Your email">
+    </div>
+    <div class="form-group">
+        <label class="sr-only" for="website">Website</label>
+        <input class="form-control input-lg" name="website" id="website" type="url" data-ng-model="contact.website" placeholder="Your website">
+    </div>
+    <div class="form-group">
+        <label class="sr-only" for="message">Message</label>
+        <textarea class="form-control input-lg" required="required" name="message" id="message" data-ng-model="contact.message" rows="5" placeholder="Your message"></textarea>
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-envelope"></span> Send message</button>
+    </div>
+</form>
