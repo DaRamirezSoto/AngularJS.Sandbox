@@ -1,0 +1,12 @@
+/*
+    Document   : fiddle
+    Created on : Aug 27, 2013, 8:37:54 PM
+    Author     : DaRamirezSoto
+    Description:
+        Defined global styles used in the fiddels
+*/
+
+.navbar-fiddle {
+    background: #DDD;
+    border-bottom: solid 1px;
+}

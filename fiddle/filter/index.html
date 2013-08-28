@@ -11,10 +11,8 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
-        <!--
-        <link rel="stylesheet" href="css/site.css">
-        <script src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-        //-->
+        <link rel="stylesheet" href="../../css/fiddle.css">
+        <script src="../../js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <style>
             .sortasc:before {
                 content: '\25B2';
@@ -25,7 +23,7 @@
         </style>
     </head>
     <body data-ng-controller="listCtrl">
-        <div class="nav-bar navbar-fixed-top" style="background: #EEE;">
+        <nav class="nav-bar navbar-fixed-top navbar-fiddle">
             <div class="container">
                 <h1>Find books <small>- Filter with AngularJS</small></h1>
                 <form class="form-inline" role="form">
@@ -45,14 +43,15 @@
                         <ul class="list-inline" style="display: inline-block; margin-left: 210px;">
                             <li>Order by :</li>
                             <li data-ng-repeat="property in properties">
-                                <a href=""
-                                   data-ng-class="predicate==property?{false:'sortasc',true:'sortdesc'}[reverse]:''"
-                                   data-ng-click="setOrderBy(property)">{{ property }}</a></li>
+                                <a  href=""
+                                    data-ng-class="predicate==property?{false:'sortasc',true:'sortdesc'}[reverse]:''"
+                                    data-ng-click="setOrderBy(property)">{{ property }}</a>
+                            </li>
                         </ul>
                     </div>
                 </form>
             </div>
-        </div>
+        </nav>
         <div style="margin-top: 150px;">
             <ul class="listl-unstyled list-inline">
                 <li data-ng-repeat="book in filtered = ({true:books,false:(books|filter:search)}[search.Tags==null]|filter:query|orderBy:predicate:reverse)" style="width: 50%;height: 250px;">
@@ -66,44 +65,57 @@
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>');</script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js"></script>
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
         <script src="../../js/vendor/underscore-min.js"></script>
         <script>
-            angular.module('filterFiddle',[]);
 
-            function listCtrl($scope,$http) {
+            angular.
+                module('filterFiddle',[]).
+                controller('listCtrl',['$scope','$http',function($scope,$http) {
 
-                $http.get('../data/books.json')
-                    .then(function(response) {
-                        $scope.books = response.data;
-                        $scope.tags = (function () {
-                            return _.chain($scope.books)
-                                    .pluck('Tags')
-                                    .flatten()
-                                    .unique()
-                                    .sort()
-                                    .value();
-                        })();
-                        $scope.properties = (function(){
-                            return _.chain($scope.books[0])
-                                    .keys()
-                                    .value();
-                        }());
-                        $scope.predicate = $scope.properties[0];
-                        $scope.reverse = false;
+                    $http.
+                        get('../data/books.json').
+                        then(function(response) {
 
-                });
+                            $scope.books = response.data;
+                            $scope.tags = (function () {
+                                return _.
+                                        chain($scope.books).
+                                        pluck('Tags').
+                                        flatten().
+                                        unique().
+                                        sort().
+                                        value();
+                            })();
 
-                $scope.setOrderBy = function(property) {
-                    if($scope.predicate === property) {
-                        $scope.reverse = !$scope.reverse;
-                    }else{
-                        $scope.predicate = property;
-                        $scope.reverse = false;
-                    }
-                };
-            }
+                            $scope.properties = (function(){
+                                return _.
+                                        chain($scope.books[0]).
+                                        keys().
+                                        value();
+                            }());
+
+                            $scope.predicate = $scope.properties[0];
+                            $scope.reverse = false;
+
+                        });
+
+                    $scope.setOrderBy = function(property) {
+
+                        if($scope.predicate === property) {
+
+                            $scope.reverse = !$scope.reverse;
+
+                        }else{
+
+                            $scope.predicate = property;
+                            $scope.reverse = false;
+                        }
+
+                    };
+
+                }]);
 
         </script>
         <script>
