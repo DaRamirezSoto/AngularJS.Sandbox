@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title> TreeView - AngularJS :: DaRamirezSoto</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="../../css/fiddle.css">
+        <script src="../../js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <style>
+            .sortasc:before {
+                content: '\25B2';
+            }
+            .sortdesc:before {
+                content: '\25BC';
+            }
+        </style>
+    </head>
+    <body data-ng-app="treeviewFiddle">
+        <nav class="nav-bar navbar-fiddle">
+            <div class="container">
+                <h1>Tree View <small>- with AngularJS</small></h1>
+            </div>
+        </nav>
+        <div class="container">
+            <ul data-ng-controller="treeCtrl">
+                <li data-ng-repeat="node in nodes" data-ng-include="'node-template'"></li>
+            </ul>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>');</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <script src="../../js/vendor/underscore-min.js"></script>
+        <script type="text/ng-template" id="node-template">
+                <a href="" data-ng-click="action(node)">{{ node.name }}</a>
+                <ul data-ng-if="node.nodes" data-ng-show="node.toggle">
+                    <li data-ng-repeat="node in node.nodes" data-ng-include="'node-template'"></li>
+                </ul>
+        </script>
+        <script>
+            angular.
+                module('treeviewFiddle',[]).
+                controller('treeCtrl',['$scope','$http',function($scope,$http) {
+
+                    $http.
+                        get('../data/files.json').
+                        then(function(response) {
+                            $scope.nodes = response.data;
+                        });
+
+                    $scope.action = function(node) {
+
+                        if(node.nodes !== undefined)
+                            toggle(node);
+                        else
+                            open(node);
+
+                    };
+
+                    function toggle(node) {
+
+                        node.toggle = !(node.toggle||false);
+
+                        _.each(node.nodes,function(item){
+                           if(item.nodes !== undefined && item.toggle )
+                               toggle(item);
+                        });
+
+                    }
+
+                    function open(node) {
+
+                        alert('Open ' + node.name);
+                    }
+
+                }]);
+
+        </script>
+    </body>
+</html>
