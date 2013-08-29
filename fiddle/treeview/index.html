@@ -39,7 +39,7 @@
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
         <script src="../../js/vendor/underscore-min.js"></script>
         <script type="text/ng-template" id="node-template">
-                <a href="" data-ng-click="action(node)">{{ node.name }}</a>
+                <a href="" data-ng-click="action(node)" data-ng-bind="node.name"></a>
                 <ul data-ng-if="node.nodes" data-ng-show="node.toggle">
                     <li data-ng-repeat="node in node.nodes" data-ng-include="'node-template'"></li>
                 </ul>
