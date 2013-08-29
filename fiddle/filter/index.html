@@ -35,17 +35,17 @@
                     </div>
                     <div class="form-group">
                         <label class="sr-only" for="query">Search</label>
-                        <input type="text" class="form-control" id="query" style="width:600px;" data-ng-model="query" placeholder="Search for books with &hellip; ">
+                        <input type="text" class="form-control" id="query" style="width:600px;" data-ng-model="query" placeholder="Search for books with &hellip;">
                     </div>
 
                     <div >
-                        <span>Found {{ filtered.length }} matches in {{ books.length }} books</span>
+                        <span data-ng-bind-template="Found {{ filtered.length }} matches in {{ books.length }} books"></span>
                         <ul class="list-inline" style="display: inline-block; margin-left: 210px;">
                             <li>Order by :</li>
                             <li data-ng-repeat="property in properties">
                                 <a  href=""
                                     data-ng-class="predicate==property?{false:'sortasc',true:'sortdesc'}[reverse]:''"
-                                    data-ng-click="setOrderBy(property)">{{ property }}</a>
+                                    data-ng-click="setOrderBy(property)" data-ng-bind="property"></a>
                             </li>
                         </ul>
                     </div>
@@ -56,10 +56,10 @@
             <ul class="listl-unstyled list-inline">
                 <li data-ng-repeat="book in filtered = ({true:books,false:(books|filter:search)}[search.Tags==null]|filter:query|orderBy:predicate:reverse)" style="width: 50%;height: 250px;">
                     <img data-ng-src="../data/assets/{{ book.Image }}" class="pull-left">
-                    <b>{{ book.Title }}</b><br>
-                    <i>Released : </i>{{ book.Released }}<br>
-                    <i>Authors : </i>{{ book.Authors.join(', ') }}<br>
-                    <i>Categories : </i>{{ book.Tags.join(', ') }}
+                    <b data-ng-bind="book.Title"></b><br>
+                    <i>Released : </i><span data-ng-bind="book.Released"></span><br>
+                    <i>Authors : </i><span data-ng-bind-template="{{ book.Authors.join(', ') }}"></span><br>
+                    <i>Categories : </i><span data-ng-bind-template="{{ book.Tags.join(', ') }}"></span>
                 </li>
             </ul>
         </div>

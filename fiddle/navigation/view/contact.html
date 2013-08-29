@@ -1,23 +1,49 @@
-<h1>Contact</h1>
-<form role="form">
-    <div class="form-group">
-        <label class="sr-only" for="name">Name</label>
-        <span></span>
-        <input class="form-control input-lg" required="required" name="name" id="name" data-ng-model="contact.name" type="text" placeholder="Your name">
-    </div>
-    <div class="form-group">
-        <label class="sr-only" for="email">Email</label>
-        <input class="form-control input-lg" required="required" name="email" id="email" data-ng-model="contact.email" type="email" placeholder="Your email">
-    </div>
-    <div class="form-group">
-        <label class="sr-only" for="website">Website</label>
-        <input class="form-control input-lg" name="website" id="website" type="url" data-ng-model="contact.website" placeholder="Your website">
-    </div>
-    <div class="form-group">
-        <label class="sr-only" for="message">Message</label>
-        <textarea class="form-control input-lg" required="required" name="message" id="message" data-ng-model="contact.message" rows="5" placeholder="Your message"></textarea>
+<div class="page-header">
+    <h1>Contact <small></small></h1>
+</div>
+<div class="alert alert-info">
+    This contact form is for <strong>demo</strong> purposes only. <strong>No email will be send!</strong>
+</div>
+<form name="contactFrm" role="form" data-ng-submit="submitMessage()">
+    <div class="row">
+        <div class="col-xs-6">
+            <div data-ng-class="['form-group',({true:'has-success',false:'has-error'}[contactFrm.gender.$valid])]">
+                <label class="radio-inline control-label"><input type="radio" name="gender" required="required" value="male" data-ng-model="contact.gender"> Mr.</label>
+                <label class="radio-inline control-label"><input type="radio" name="gender" required="required" value="female" data-ng-model="contact.gender"> Ms.</label>
+            </div>
+            <div data-ng-class="['form-group',({true:'has-success',false:'has-error'}[contactFrm.firstname.$valid])]">
+                <label class="sr-only control-label" for="firstname">First name</label>
+                <input class="form-control" required="required" name="firstname" id="firstname" data-ng-model="contact.firstname" type="text" placeholder="First name&hellip;">
+            </div>
+            <div data-ng-class="['form-group',({true:'has-success',false:'has-error'}[contactFrm.lastname.$valid])]">
+                <label class="sr-only control-label" for="lastname">Last name</label>
+                <input class="form-control" required="required" name="lastname" id="lastname" data-ng-model="contact.lastname" type="text" placeholder="Last name&hellip;">
+            </div>
+            <div data-ng-class="['form-group',({true:'has-success',false:'has-error'}[contactFrm.phone.$valid])]">
+                <label class="sr-only control-label" for="phone">Phone</label>
+                <input class="form-control" required="required" name="phone" id="phone" data-ng-model="contact.phone" type="text" placeholder="Phone&hellip;">
+            </div>
+            <div data-ng-class="['form-group',({true:'has-success',false:'has-error'}[contactFrm.email.$valid])]">
+                <label class="sr-only control-label" for="email">Email</label>
+                <input class="form-control" required="required" name="email" id="email" data-ng-model="contact.email" type="email" placeholder="Email&hellip;">
+            </div>
+            <div data-ng-class="['form-group',({true:'has-success',false:'has-error'}[contactFrm.website.$valid])]">
+                <label class="sr-only control-label" for="website">Website</label>
+                <input class="form-control" name="website" id="website" type="url" data-ng-model="contact.website" placeholder="Website&hellip;">
+            </div>
+        </div>
+        <div class="col-xs-6" style="padding-top: 35px;">
+                     <div data-ng-class="['form-group',({true:'has-success',false:'has-error'}[contactFrm.subject.$valid])]">
+                <label class="sr-only control-label" for="subject">subject</label>
+                <input class="form-control" required="required" name="subject" id="subject" type="text" data-ng-model="contact.subject" placeholder="Subject&hellip;">
+            </div>
+            <div data-ng-class="['form-group',({true:'has-success',false:'has-error'}[contactFrm.message.$valid])]">
+                <label class="sr-only control-label" for="message">Message</label>
+                <textarea class="form-control" required="required" name="message" id="message" data-ng-model="contact.message" rows="9" placeholder="Your message&hellip;"></textarea>
+            </div>
+        </div>
     </div>
     <div>
-        <button type="submit" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-envelope"></span> Send message</button>
+        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-envelope"></span> Send message</button>
     </div>
 </form>
